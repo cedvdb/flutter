@@ -212,7 +212,6 @@ class _ButtonStyleState extends State<ButtonStyleButton> with MaterialStateMixin
     final ButtonStyle? widgetStyle = widget.style;
     final ButtonStyle? themeStyle = widget.themeStyleOf(context);
     final ButtonStyle defaultStyle = widget.defaultStyleOf(context);
-    assert(defaultStyle != null);
 
     T? effectiveValue<T>(T? Function(ButtonStyle? style) getProperty) {
       final T? widgetValue  = getProperty(widgetStyle);
